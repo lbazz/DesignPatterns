@@ -8,5 +8,5 @@ interface InterfaceCarroProduct
 
     public function frear();
 
-    public function trocarMarchar();
+    public function trocarMarcha();
 }

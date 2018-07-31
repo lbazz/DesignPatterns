@@ -18,9 +18,9 @@ class ChevroletFactory implements InterfaceCarroFactory
     public function criarCarro(string $modeloCarro): InterfaceCarroProduct
     {
         if (strtolower($modeloCarro) == "opala") {
-            return ChevroletOpala();
+            return new ChevroletOpala();
         } elseif (strtolower($modeloCarro) == "caravan") {
-            return ChevroletCaravan();
+            return new ChevroletCaravan();
         } else {
             throw new \Exception("Modelo de carro {$modeloCarro} não existe no sistema.");
         }

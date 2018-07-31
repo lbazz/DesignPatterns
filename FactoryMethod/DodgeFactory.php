@@ -18,9 +18,9 @@ class DodgeFactory implements InterfaceCarroFactory
     public function criarCarro(string $modeloCarro): InterfaceCarroProduct
     {
         if (strtolower($modeloCarro) == "dart") {
-            return DodgeDart();
+            return new DodgeDart();
         } elseif (strtolower($modeloCarro) == "charger") {
-            return DodgeCharger();
+            return new DodgeCharger();
         } else {
             throw new \Exception("Modelo de carro {$modeloCarro} não existe no sistema.");
         }
